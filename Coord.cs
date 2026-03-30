@@ -17,5 +17,14 @@ namespace Retro_Snake_Game
             this.x = x;
             this.y = y;
         }
+
+
+        public override bool Equals(object? obj)
+        {
+            if ((obj == null) || !GetType().Equals(obj.GetType()))
+                    return false;
+            Coord other = (Coord)obj;
+            return x == other.x && y == other.y;
+        }
     }
 }
