@@ -26,5 +26,25 @@ namespace Retro_Snake_Game
             Coord other = (Coord)obj;
             return x == other.x && y == other.y;
         }
+
+        public void ApplyMovementDirection (Direction direction)
+        {
+            switch (direction)
+            {
+                case Direction.Left:
+                    x--;
+                    break;
+                case Direction.Right:
+                    x++;
+                    break;
+                case Direction.up:
+                    y--;
+                    break;
+                case Direction.Down:
+                    y++;
+                    break;
+            }
+        }
+
     }
 }
