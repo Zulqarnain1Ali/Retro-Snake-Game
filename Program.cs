@@ -83,7 +83,7 @@ while (true)
                     movementDirection = Direction.up;
                     break;
             }
-        }
+        } 
     }
 }
 
