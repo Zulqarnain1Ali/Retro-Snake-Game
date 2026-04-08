@@ -2,7 +2,7 @@
 
 
 Coord griddimensions = new Coord(50, 20);
-Coord snakePos = new Coord(10, 1);
+Coord snakePos = new Coord(10, 1); 
 Random rand = new Random();
 Coord applePos = new Coord(rand.Next(1, griddimensions.X - 1), rand.Next(1, griddimensions.Y - 1));
 int frameDelayMilli = 100;
